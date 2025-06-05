@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root{
+  --color1:rgb(7, 62, 7);
+}
+/*Desktop*/
+body{
+  background-color: black;
+}
+/*Encabezado*/
+.encabezado{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: var(--color1);
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+/*Cuerpo de las tarjetas*/
+.cuerpo{
+  text-align: center;
+}
+
+/*Titulo*/
+.titulo{
+  margin: 10px 0px;
+  font-size: 2rem;
+  text-align: center;
+}
+/*Imagenes*/
+.img{
+  width: 100%;
+  height: auto;
+}
+/*Tarjetas*/
+.tarjeta{
+  margin: 20px;
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border-radius: 2%;
+}
