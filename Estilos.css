@@ -67,6 +67,9 @@ body{
 .tarjeta:hover{
   transform: scale3d(1.1, 1.1, 1.1);
 }
+img[alt="COVENANT"]{
+  display: none;
+}
 
 @media (max-width:998px){
   .menu{
@@ -80,25 +83,27 @@ body{
   .encabezado{
     height: 240px;
   }
+  img[alt="HALO"]{
+    display: none;
+  }
+  img[alt="COVENANT"]{
+    display: inline-block;
+  }
 }
 
 @media print {
   body {
-    font-size: 12pt; /* Adjust font size for readability */
-    color: black; /* Ensure text is printed in black */
-    background: none; /* Remove background colors or images */
+    font-size: 12pt; 
+    color: black;
+    background: none;
   }
 
-  header, footer, nav {
-    display: none; /* Hide unnecessary elements like navigation */
+  .encabezado{
+    display: none; 
   }
 
-  a::after {
-    content: " (" attr(href) ")"; /* Show URLs for links */
-  }
-
-  img {
-    max-width: 100%; /* Ensure images fit within the page */
+  .img {
+    max-width: 100%; 
   }
 }
 
